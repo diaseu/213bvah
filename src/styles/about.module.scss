@@ -1,0 +1,30 @@
+@import "./variables";
+
+
+.content {
+    position: relative;
+    transform: translateY(-120px);
+    background-color: #fff;
+    padding: 50px 125px;
+    max-width: 1380px;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.about {
+    h1 {
+        font-family: $sansfont;
+        font-size: 4.35em;
+        line-height: 80px;
+        color: $primaryColor;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+.flex {
+
+}
+

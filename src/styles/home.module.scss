@@ -1,0 +1,258 @@
+@import "./variables";
+
+
+
+.content {
+    position: relative;
+    transform: translateY(-120px);
+    background-color: #fff;
+    padding: 50px 125px;
+    max-width: 1380px;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.location {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    transform: translateY(-120px);
+    background-color: #fff;
+    // padding: 50px 125px;
+    max-width: 1380px;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    .map {
+        width: 100%;
+    }
+    .info {
+        min-width: 400px;
+        background-color: $accentColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        padding: 2vh;
+        color: $primaryColor;
+
+        h3 {
+            // text-transform: uppercase;
+            font-family: $seriffont;
+            font-size: 1.25em;
+            font-weight: 400;
+            text-shadow: rgba(0, 0, 0, 0.4) 0px 3px 30px;
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            font-weight: 200;
+            line-height: 1.2;
+        }
+        .day {
+            margin-right: 5px;
+            text-align: right;
+            border-right: 2px solid $accentColor2;
+            padding-right: 10px;
+        }
+        .time {
+            
+            // padding-left: 5px;
+            // margin-left: 5px;
+        }
+    }
+}
+
+.hero {
+    color: $primaryColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1, p {
+        color: $primaryColor;
+    }
+}
+
+.about {
+    p {
+        font-size: 1.5em;
+        font-style: italic;
+        color: $accentColor;
+    }
+    h3 {
+        max-width: 400px;
+        font-family: $sansfont;
+        font-size: 2.25em;
+        line-height: 10px;
+        color: $darkColor;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 500;
+        small {
+            font-size: 0.5em;
+            font-weight: 400;
+            font-style: italic;
+            font-family: $seriffont;
+            text-transform: initial;
+            position: relative;
+            top: -20px;
+            &::after {
+                content: "\a";
+                white-space: pre;
+            }
+            &::before {
+                content: "\a";
+                white-space: pre;
+            }
+        }
+        span {
+            font-size: 0.72em;
+            font-weight: 300;
+            line-height: 30px;
+            letter-spacing: 3px;
+            // font-style: italic;
+            font-family: $sansfont;
+            text-transform: initial;
+            &::before {
+                content: "\a";
+                white-space: pre;
+            }
+        }
+    }    
+
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    h3 {
+        flex-direction: column;
+        justify-items: center;
+        align-content: center;
+        text-align: center;
+        margin: auto 0;
+        margin-left: 75px;
+    }
+}
+
+
+
+.contact {
+
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    grid-gap: 5px;
+    grid-auto-flow: dense;
+    & img {
+        width: 100%;
+        height: 100%;
+    }
+    .horizontal {
+        grid-column: span 2;
+    }
+    .vertical {
+        grid-row: span 2;
+    }
+    .big {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+    @media screen and (max-width: 800px) {
+        .column {
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+    }
+}
+
+@function rem($pixels, $context: 16) {
+	@return ($pixels / $context) * 1rem;
+}
+
+// Card
+.testimonial {
+	background-color: var(--card-blue);
+	border-radius: 5px;
+	padding: 40px 25px 25px;
+	flex-grow: 1;
+	flex-basis: 280px;
+	max-width: 360px;
+	position: relative;
+	
+	// Fonts 	
+	&__text {
+		font-weight: normal;
+		font-size: rem(14);
+		line-height: 21px;
+		margin-bottom: rem(25);
+	}
+	
+	&__job {
+		font-weight: normal;
+		font-size: rem(8);
+		line-height: 10px;
+		letter-spacing: 0.5px;
+	}
+	
+	&__name {
+		font-weight: bold;
+		font-size: rem(10);
+		line-height: 12px;
+		letter-spacing: 0.5px;
+		margin-bottom: 5px;
+	}
+
+	// Bottom layout
+	&__img {
+		display: inline-block;
+		width: 30px;
+		margin-right: 10px;
+
+		img {
+			vertical-align: bottom;
+			border-radius: 50%;
+		}
+	}
+
+	&__info {
+		display: inline-block;
+	}
+}	
+
+// General Styles
+.container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	
+	// Specific Styles
+	&--testimonials {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 25px 40px;
+		justify-content: center;
+		padding: 45px 45px 90px;
+
+		@media (min-width: 78.125em) {
+			padding: 0;
+			max-width: 1160px;
+		}
+	}
+}

@@ -1,0 +1,91 @@
+@import "./variables";
+
+.alert {
+  display: none;
+  padding: 10px 20px;
+  background-color: #2196f3;
+  color: white;
+  margin-bottom: 15px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 9999;
+  border-radius: 0px;
+  font-size: 12px;
+  font-family: $sansfont;
+}
+
+.closebtn {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    color: black;
+  }
+}
+
+.menu {
+  background: transparent;
+  margin-bottom: 1.45rem;
+  position: fixed;
+  top: 0;
+  font-family: $seriffont;
+}
+
+header {
+  @include flexBetween();
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  z-index: 11;
+  padding: 0 50px;
+  width: 100%;
+}
+
+.menu {
+  @include flexBetween();
+  background-color: $backgroundColor2;
+}
+
+.logo {
+  @include flexCenter();
+
+  // fill: $accentColor;
+  // svg {
+  //   fill: $accentColor;
+  // }
+  .navlogo {
+    width: 50px;
+    fill: #fff;
+    font-size: 8px;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 2vh;
+}
+
+.navMenu {
+  display: flex;
+  justify-content: "space-evenly";
+  list-style: none;
+  li {
+    margin: 0px 15px;
+    // color: $primaryColor;
+  }
+  a {
+    @include navLink();
+    &:hover {
+      color: $accentColor;
+    }
+  }
+}

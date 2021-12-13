@@ -1,0 +1,167 @@
+@import "./variables";
+
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.contact {
+    position: relative;
+    transform: translateY(-120px);
+    background-color: #fff;
+    // padding: 50px 125px;
+    max-width: 1380px;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.start {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    transform: translateY(-120px);
+    background-color: #fff;
+    // padding: 50px 125px;
+    max-width: 1380px;
+    margin: 0 auto;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    .map {
+        width: 100%;
+        border: 0;
+    }
+    .info {
+        min-width: 400px;
+        background-color: $accentColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        padding: 2vh;
+        color: $primaryColor;
+
+        h3 {
+            text-transform: uppercase;
+            font-family: $sansfont;
+            font-size: 1.25em;
+            font-weight: 400;
+            text-shadow: rgba(0, 0, 0, 0.4) 0px 3px 30px;
+        }
+        span {
+                font-family: $sansfont2;
+                // text-transform: uppercase;
+                font-size: 0.75em;
+                display: inline-block;
+                padding-left: 10px;
+                // padding-bottom: 5px;
+                i {
+                    font-style: initial;
+                    margin-left: 20px;
+                }
+            }
+        button {
+            border-radius: 5px;
+            background-color: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: $sansfont;
+            font-size: 0.75em;
+            max-width: 150px;
+            margin: 0 auto;
+        }
+        .day {
+            margin-right: 5px;
+            text-align: right;
+            border-right: 2px solid $accentColor2;
+            padding-right: 10px;
+        }
+        .time {
+            
+            // padding-left: 5px;
+            // margin-left: 5px;
+        }
+    }
+}
+
+.location {
+    h2 {
+        text-transform: uppercase;
+    }
+    span {
+        font-family: $sansfont2;
+        // text-transform: uppercase;
+        font-size: 0.75em;
+        display: block;
+    }
+}
+
+.hours {
+        // min-width: 400px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-content: center;
+        // text-align: center;
+        color: $primaryColor;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        img {
+            max-width: 600px;
+
+        }
+        .details {
+            background-color: $accentColor2;
+            width: 100%;
+            // flex-direction: column;
+            justify-items: center;
+            align-content: center;
+            text-align: left;
+            margin: 0 auto;
+            // margin-left: 5vh;
+            padding: 20px 50px;
+            // line-height: 2;
+            h3 {
+                text-align: center;
+                margin: 10px auto;
+            }
+            span {
+                font-family: $sansfont2;
+                // text-transform: uppercase;
+                font-size: 0.75em;
+                display: inline-block;
+                padding-left: 10px;
+                // padding-bottom: 5px;
+                i {
+                    font-style: initial;
+                    margin-left: 20px;
+                }
+            }
+            
+        }
+       
+    }
+
+    .day {
+        // margin-right: 5px;
+        // text-align: right;
+        // border-right: 2px solid $accentColor2;
+        // padding-right: 10px;
+        }
+    .time {
+        
+        // padding-left: 5px;
+        // margin-left: 5px;
+    }

@@ -1,0 +1,47 @@
+$primaryColor: #fff;
+$accentColor: #4E9B60;
+$accentColor2: #D86689;
+$darkColor: #000;
+$backgroundColor: rgba(20,20,20,1);
+$backgroundColor2: transparent;
+$sansfont: 'Josefin Sans', sans-serif;
+$sansfont2: 'Lato', Arial, Helvetica, sans-serif;
+$seriffont: 'Cardo', serif;
+
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexrow {
+  display: flex;
+  flex-direction: row;
+}
+
+.fifty {
+  width: 50%;
+}
+
+.hundred {
+  width: 100%;
+}
+
+@mixin flexBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin navLink {
+  color: $primaryColor; 
+  font-size: 13px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
