@@ -14,6 +14,10 @@
     color: $primaryColor;
     text-transform: uppercase;
     border-top: 5px solid $accentColor2;
+    a {
+        color: #fff;
+        text-align: center;
+    }
 }
 
 .widgets {
@@ -103,4 +107,14 @@
         margin-bottom: 1vh;
 
     }
+}
+
+.socialmedia {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid #fff;
+    width: 100%;
+    padding: 1vh;
 }

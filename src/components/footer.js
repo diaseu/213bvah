@@ -2,7 +2,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import {
-  footer, credit, widgets, footerhours, footerday, footerinfo
+  footer, credit, widgets, footerhours, footerday, footerinfo, socialmedia
 } from "../styles/footer.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
@@ -10,6 +10,7 @@ import {
   faMapMarkerAlt,
   faPhoneAlt,
 } from "@fortawesome/free-solid-svg-icons"
+import { faFacebook, faYelp, faInstagram } from "@fortawesome/free-brands-svg-icons"
 
 const Footer = ({ siteTitle }) => (
   <>
@@ -36,18 +37,29 @@ const Footer = ({ siteTitle }) => (
             alt="Beverly Virgil"
             style={{ marginBottom: `1.45rem`, maxWidth: "300px" }}
           /> */}
-            <h3>Come Visit Us</h3>
-            <p>
+          <h3>Come Visit Us</h3>
+          <p>
             <FontAwesomeIcon icon={faMapMarkerAlt} size="1x" />
             <i>
-                3363 West First Street
-                <span> Los Angeles, CA 90004</span>
+              3363 West First Street
+              <span> Los Angeles, CA 90004</span>
             </i>
-            </p>
-            <p>
+          </p>
+          <p>
             <FontAwesomeIcon icon={faPhoneAlt} size="1x" />
             <i>(213) 387 - 3388</i>
-            </p>
+          </p>
+          <p className={socialmedia}>
+            <a href="http://facebook.com/213petsanimalhospital">
+              <FontAwesomeIcon icon={faFacebook} size="1x" />
+            </a>
+            <a href="https://www.yelp.com/biz/beverly-virgil-animal-hospital-los-angeles">
+              <FontAwesomeIcon icon={faYelp} size="1x" />
+            </a>
+            <a href="https://www.instagram.com/bvah_/?hl=en">
+              <FontAwesomeIcon icon={faInstagram} size="1x" />
+            </a>
+          </p>
         </div>
 
         <div className={footerhours}>

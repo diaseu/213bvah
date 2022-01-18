@@ -6,6 +6,7 @@
 }
 
 .about {
+    margin-top: 5vh;
     margin-bottom: 15vh;
     p {
         font-family: $sansfont2;
@@ -37,6 +38,8 @@
 
 .row {
     @include flexRow;
+    justify-content: center;
+    align-items: center;
     img {
         width: 100%;
         @include breakpoint(laptop) {
@@ -44,9 +47,13 @@
             margin-right: 2vh;
         }
     }
-    p {
+    div {
+        justify-content: center;
+        align-items: center;
         padding: 0 10vh;
-        font-size: $ms-1;
-        line-height: $ms-2;
+        line-height: 0.9em;
+        p {
+            font-size: 0.95em;
+        }
     }
 }
