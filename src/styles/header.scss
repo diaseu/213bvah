@@ -28,7 +28,7 @@
   }
   img {
     width: 60px;
-    padding-top: 2vh;
+    padding-top: 1vh;
     margin-bottom: 0;
     @include breakpoint(mobileonly) {
     padding-top: 1vh;
@@ -41,9 +41,6 @@
   padding-top: 2vh;
   justify-content: flex-end;
   width: 100%;
-  @include breakpoint(mobileonly) {
-    justify-content: space-evenly;
-  }
 }
 
 .navMenu {
@@ -62,7 +59,7 @@
     width: 100%;
     padding: 2vh;
     margin: 0;
-    
+    display: none;
     // > * {
     //   padding: 1vh;
     // }
@@ -70,6 +67,8 @@
   &.active {
     @include breakpoint(mobileonly) {
       opacity: 1;
+      display: block;
+      transition: all 0.5s ease-in-out;
     }
   }
   li {
