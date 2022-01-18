@@ -1,0 +1,106 @@
+@import "./variables";
+
+.footer {
+    @include flexColumn;
+
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: $accentColor;
+    padding: 1vh 0 0 0;
+    @include breakpoint(laptop) {
+        padding: 3vh 15vh 0 15vh;
+    }
+    color: $primaryColor;
+    text-transform: uppercase;
+    border-top: 5px solid $accentColor2;
+}
+
+.widgets {
+    @include wfull;
+    @include flexRow;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    h3 {
+        color: $primaryColor;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: $sansfont;
+    }
+    @include bvahlogo(h4, 1.8em);
+    h4 {
+        margin-bottom: 0;
+    }
+    > * {
+        padding: 5vh 2vh 0 2vh;
+        @include breakpoint(mobileonly) {
+            width: 100%;
+            padding: 2vh 2vh;
+        }
+        img {
+            @include breakpoint(mobileonly) {
+            display: none;
+        }
+        }
+        p {
+            font-weight: 300;
+            // font-size: 0.85em;
+        }
+    }
+}
+
+.credit {
+    // margin: 0 auto;
+    font-size: 0.5em;
+    text-align: right;
+    font-family: $sansfont;
+    text-transform: uppercase;
+    padding: 0 0 1vh 0;
+    background-color: transparent
+}
+
+.footerinfo {
+    
+    font-size: 1.2em;
+    font-family: $sansfont;
+    svg {
+        margin-right: 2vh;
+    }
+    h3 {
+        padding-bottom: 5vh;
+        @include breakpoint(mobileonly) {
+            padding-bottom: 0vh;
+        }
+    }
+    p {
+        font-weight: 300;
+        @include breakpoint(mobileonly) {
+            padding: 0 4vh;
+        }
+        i {
+            font-style: inherit;
+            span {
+                display: block;
+                text-indent: 3vh;
+            }
+        }
+    }
+}
+
+.footerhours {
+    @include flexColumn;
+    @include breakpoint(laptop) {
+        width: 30%;
+    }
+    // padding: 5vh 2vh 0 2vh;
+
+    p {
+        margin-bottom: 1vh;
+    }
+    .footerday {
+        @include flexBetween;
+        border-bottom: 1px solid $primaryColor;
+        margin-bottom: 1vh;
+
+    }
+}

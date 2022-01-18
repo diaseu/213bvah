@@ -1,0 +1,62 @@
+// TYPOGRAPHY
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700&display=swap');
+
+// Scale
+$base: 0.5em;
+$scale: 1.618;
+
+// Misc
+$transition: 300ms;
+$max-width: 80vw;
+
+// Fonts
+$sans: 'Josefin Sans', 'Helvetica', 'Arial', 'sans-serif';
+$sans2: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+$serif: 'Cardo', 'Georgia', 'serif';
+$mono: 'input', 'consolas','monospace';
+
+// Scale Ladder
+$ms-0: calc($base);
+$ms-1: calc($ms-0 * $scale);
+$ms-2: calc($ms-1 * $scale);
+$ms-3: calc($ms-2 * $scale);
+$ms-4: calc($ms-3 * $scale);
+$ms-5: calc($ms-4 * $scale);
+$ms-6: calc($ms-5 * $scale);
+$ms-7: calc($ms-6 * $scale);
+$ms-8: calc($ms-7 * $scale);
+$ms-9: calc($ms-8 * $scale);
+
+$cbase: 0.5;
+$cs-0: calc($cbase);
+$cs-1: calc($cs-0 * $scale);
+$cs-2: calc($cs-1 * $scale);
+$cs-3: calc($cs-2 * $scale);
+$cs-4: calc($cs-3 * $scale);
+$cs-5: calc($cs-4 * $scale);
+
+h1 {
+    font-size: $ms-5;
+    line-height: $ms-4;
+}
+h2 {
+    font-size: $ms-4;
+    line-height: $ms-3;
+}
+h3 {
+    font-size: $ms-3;
+    line-height: $ms-2;
+}
+h4 {
+    font-size: $ms-2;
+    line-height: $ms-1;
+}
+h5 {
+    font-size: $ms-1;
+    line-height: $ms-0;
+    font-weight: 600
+}
+p {
+    font-size: $ms-1;
+    line-height: $ms-2;
+}

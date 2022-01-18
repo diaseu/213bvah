@@ -12,6 +12,7 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 
 import Hero from "./hero"
 import Header from "./header"
+import Footer from "./footer"
 import "../styles/layout.scss"
 import { content, footer } from "../styles/layout.module.scss"
 
@@ -39,12 +40,9 @@ const Layout = ({ children, heroimg, herotitle }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       > */}
-        <main>{children}</main>
-        <footer className={footer}>
-          © {new Date().getFullYear()}
-          {` `}
-          <a href="https://www.disedesign.com">Dise Design</a>
-        </footer>
+      <main>{children}</main>
+      <Footer siteTitle={data.site.siteMetadata?.title || `Title`} />
+      
       {/* </div> */}
     </>
   )

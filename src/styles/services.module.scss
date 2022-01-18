@@ -1,18 +1,63 @@
 @import "./variables";
 
-.services {
-    .description {
-        position: relative;
-        transform: translateY(-120px);
-        background-color: #fff;
-        padding: 50px 125px;
-        max-width: 1380px;
-        margin: 0 auto;
-        width: 100%;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-        // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    }
-    .icon {
+.content {
+    @extend %content;
+}
 
+.description {
+    h3 {
+        @extend %contentitle;
     }
 }
+
+.services {
+    .row {
+        @include flexRow;
+        h4 {
+            text-align: center;
+        }
+        p {
+            font-size: 0.85em;
+            line-height: 1.1;
+        }
+    }
+    .row > div {
+        flex: 1;
+        justify-content: center;
+        align-content: center;
+        padding: 4vh 4vh 5vh 4vh;
+        margin: 1vh 0;
+        position: relative;
+        &:nth-child(odd) {
+            background-color: rgba(100,100,100,0.15);
+        }
+        p {
+            margin: 0;
+        }
+        span {
+            color: rgb(180, 0, 0);
+            position: absolute;
+            bottom: 1vh;
+            right: 1vh;
+            .inline {
+                display: inline;
+                margin: 0 1vh 0 2vh;
+            }
+        }
+
+        .icon {
+            // border-radius: 50%;
+            // border: 1px solid $darkColor;
+            // padding: 3vh;
+            display: block;
+            text-align: center;
+            justify-content: center;
+            align-content: center;
+            margin: 0 auto 2vh auto;
+            color: $accentColor;
+            background-blend-mode: screen;
+            background: url();
+        }
+    }
+}
+

@@ -1,47 +1,100 @@
+@import './helpers';
+@import './typography';
+
+// Theme Variables
 $primaryColor: #fff;
 $accentColor: #4E9B60;
 $accentColor2: #D86689;
-$darkColor: #000;
-$backgroundColor: rgba(20,20,20,1);
+$darkColor: rgba(50,50,50,1);
+$backgroundColor: rgba(240,240,240,1);
 $backgroundColor2: transparent;
 $sansfont: 'Josefin Sans', sans-serif;
 $sansfont2: 'Lato', Arial, Helvetica, sans-serif;
 $seriffont: 'Cardo', serif;
 
-.flexcolumn {
-  display: flex;
-  flex-direction: column;
+
+
+%content {
+    position: relative;
+    transform: translateY(-120px);
+    background-color: $backgroundColor;
+    padding: 3vh 1vh;
+    max-width: 1380px;
+    margin: 0 auto;
+    width: 100%;
+    border-top: 5px solid $accentColor;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    @include breakpoint(phablet) {
+        padding: 3vh 10vh;
+    }
 }
 
-.flexrow {
-  display: flex;
-  flex-direction: row;
+%contentitle {
+    // text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    // letter-spacing: 1px;
+    font-family: $serif;
+    font-style: italic;
 }
 
-.fifty {
-  width: 50%;
-}
-
-.hundred {
-  width: 100%;
-}
-
-@mixin flexBetween {
-  display: flex;
-  justify-content: space-between;
-}
-
-@mixin flexCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin navLink {
+%navLink {
   color: $primaryColor; 
   font-size: 13px;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+
+@mixin bvahlogo($htype: h1, $h1size: 4.35em, ) {
+  #{$htype} {
+      font-family: $sansfont;
+      font-size: $h1size;
+      line-height: 80px;
+      color: $primaryColor;
+      text-transform: uppercase;
+      text-align: center;
+      text-shadow: rgba(0, 0, 0, 0.6) 0px 30px 90px;
+      @include breakpoint(desktop) {
+            font-size: $h1size;
+            line-height: calc(0.9 * $h1size);
+        }
+        @include breakpoint(phablet) {
+            font-size: calc(0.75 * $h1size);
+            line-height: 1.5em;
+        }
+        @include breakpoint(mobileonly) {
+            font-size: calc(0.5 * $h1size);
+            line-height: calc(0.4 * $h1size);
+        }
+      small {
+          font-size: 0.6em;
+          font-weight: 400;
+          font-style: italic;
+          font-family: $seriffont;
+          text-transform: lowercase;
+          position: relative;
+        //   top: -1vh;
+          &::before, &::after {
+              content: "";
+              position: absolute;
+              height: 6px;
+              // border-bottom: 1px solid white;
+              border-top: 1px solid white;
+              top: 1vh;
+              width: 5vh;
+                  
+          }
+          &::before {
+              right: 100%;
+              margin-right: 15px;
+          }
+          &::after {
+              left: 100%;
+              margin-left: 15px;
+          }
+      }
+  }
 }

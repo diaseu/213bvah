@@ -13,7 +13,7 @@ import {
   faCapsules,
   faPhoneAlt
 } from "@fortawesome/free-solid-svg-icons"
-import { start, map, contact, location, info, hours, details, day, time, flexcolumn, flexrow } from "../styles/contact.module.scss"
+import { start, map, contact, location, info, hours, details, day, time, flexcolumn, flexrow, phone, infohour, infoday } from "../styles/contact.module.scss"
 // import * from '../styles/contact.module.scss'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -22,6 +22,108 @@ const About = () => {
   return (
     <Layout heroimg="map">
       <Seo title="Home" />
+
+      <div className={contact}>
+        <div className={location}>
+          <h3>Contact Beverly Virgil Animal Hospital</h3>
+        </div>
+        <div className={hours}>
+          <div className={details}>
+            {/* <h3>Beverly Virgil Animal Hospital</h3> */}
+            <div className={flexrow}>
+              {/* Column 1 */}
+              <div className={flexcolumn}>
+                <h4>Info</h4>
+
+                <div className={phone}>
+                  <p>
+                    <FontAwesomeIcon icon={faMapMarkerAlt} size="1x" />
+                    <i>
+                      3363 West First Street
+                      <br />
+                      Los Angeles, CA 90004
+                    </i>
+                  </p>
+                  <p></p>
+                  <p>
+                    <FontAwesomeIcon icon={faPhoneAlt} size="1x" />
+                    <i>(213) 387 - 3388</i>
+                  </p>
+                  <p>
+                    <FontAwesomeIcon icon={faFax} size="1x" />
+                    <i>(213) 387 - 9619</i>
+                  </p>
+                </div>
+                <button>Call Us Now!</button>
+              </div>
+              {/* Column 2 */}
+              <div className={flexcolumn}>
+                <h4>Office Hours</h4>
+                <div className={infoday}>
+                  <p>Monday</p>
+                  <p>8:00 am - 6:00 pm</p>
+                </div>
+                <div className={infoday}>
+                  <p>Tuesday</p>
+                  <p>8:00 am - 6:00 pm</p>
+                </div>
+                <div className={infoday}>
+                  <p>Wednesday</p>
+                  <p>8:00 am - 6:00 pm</p>
+                </div>
+                <div className={infoday}>
+                  <p>Thursday</p>
+                  <p>8:00 am - 6:00 pm</p>
+                </div>
+                <div className={infoday}>
+                  <p>Friday</p>
+                  <p>8:00 am - 6:00 pm</p>
+                </div>
+                <div className={infoday}>
+                  <p>Saturday</p>
+                  <p>8:00 am - 1:00 pm</p>
+                </div>
+                <div className={infoday}>
+                  <p>Sunday</p>
+                  <p>Closed</p>
+                </div>
+              </div>
+              {/* Column 3 */}
+              <div className={flexcolumn}>
+                <h4>Doctor's Hours</h4>
+                <div className={infoday}>
+                  <p>Monday</p>
+                  <p>8:00 am - 6:00 pm</p>
+                </div>
+                <div className={infoday}>
+                  <p>Tuesday</p>
+                  <p>8:00 am - 6:00 pm</p>
+                </div>
+                <div className={infoday}>
+                  <p>Wednesday</p>
+                  <p>8:00 am - 6:00 pm</p>
+                </div>
+                <div className={infoday}>
+                  <p>Thursday</p>
+                  <p>8:00 am - 6:00 pm</p>
+                </div>
+                <div className={infoday}>
+                  <p>Friday</p>
+                  <p>8:00 am - 6:00 pm</p>
+                </div>
+                <div className={infoday}>
+                  <p>Saturday</p>
+                  <p>8:00 am - 1:00 pm</p>
+                </div>
+                <div className={infoday}>
+                  <p>Sunday</p>
+                  <p>Closed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className={start}>
         <iframe
@@ -33,75 +135,11 @@ const About = () => {
           loading="lazy"
         ></iframe>
         <div className={info}>
-          <h3>Contact Us</h3>
-          <span>
-            <FontAwesomeIcon icon={faMapMarkerAlt} size="1x" />
-            <i>
-              3363 West First Street
-              <br /> Los Angeles, CA 90004
-            </i>
-          </span>
-          <span>
-            <FontAwesomeIcon icon={faPhoneAlt} size="1x" />
-            <i>(213) 387 - 3388</i>
-          </span>
-          <span>
-            <FontAwesomeIcon icon={faFax} size="1x" />
-            <i>(213) 387 - 9619</i>
-          </span>
-          <button>Call Us Now!</button>
-        </div>
-      </div>
-
-      <div className={contact}>
-        <div className={location}>
-          <h2>Beverly Virgil Animal Hospital</h2>
-        </div>
-        <div className={hours}>
           <img
             src="https://i.imgur.com/ciVBmKD.png"
             alt="Beverly Virgil"
             style={{ marginBottom: `1.45rem` }}
           />
-          <div className={details}>
-            {/* <h3>Beverly Virgil Animal Hospital</h3> */}
-            <div className={flexrow}>
-              <div className={flexcolumn}>
-                <h3>Office Hours</h3>
-                <span className={day}>
-                  Mon - Fri
-                  <i className={time}> 8 am - 6 pm</i>
-                </span>
-                <span className={day}>
-                  Sat
-                  <i className={time}> 9 am - 4 pm</i>
-                </span>
-                <span className={day}>
-                  Sun
-                  <i className={time}> Closed</i>
-                </span>
-              </div>
-              <div className={flexcolumn}>
-                <h3>Doctor's Hours</h3>
-                <span className={day}>
-                  Mon - Fri
-                  <i className={time}> 8 am - 12 pm</i>
-                </span>
-                <span className={day}>
-                  Mon - Fri
-                  <i className={time}> 2 pm - 6 pm</i>
-                </span>
-                <span className={day}>
-                  Sat
-                  <i className={time}> 9 am - 4 pm</i>
-                </span>
-                <span className={day}>
-                  Sun
-                  <i className={time}> Closed</i>
-                </span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </Layout>

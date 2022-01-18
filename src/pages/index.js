@@ -2,7 +2,7 @@ import * as React from "react"
 // import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 import { Link } from "gatsby"
 
-import { alert, closebtn, hero, about, flex, location, content, contact, map, info, day, time, gallery, big, vertical, horizontal, testimonial, container } from "../styles/home.module.scss"
+import { alert, closebtn, hero, about, flex, location, content, contact, map, info, day, time, gallery, big, vertical, horizontal, testimonial, container, background } from "../styles/home.module.scss"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -15,7 +15,7 @@ const IndexPage = () => {
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.837388546825!2d-118.28873268471655!3d34.07368252404715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c768bf284183%3A0x43b6ac0a95cf4f2f!2sBeverly%20Virgil%20Animal%20Hospital!5e0!3m2!1sen!2sus!4v1638492520546!5m2!1sen!2sus"
           width="100%"
-          height="350"
+          height="400"
           // style="border:0;"
           className={map}
           allowfullscreen=""
@@ -33,47 +33,66 @@ const IndexPage = () => {
             Los Angeles, CA 90004
           </p>
           <p>
-            <span className={day}>Mon - Fri</span>
-            <span className={time}> 8 am - 12 pm </span>
+            <div>
+              <span className={day}>Mon - Fri</span>
+              <span className={time}> 8 am - 12 pm </span>
+            </div>
+            <div>
+              <span className={day}>Sat</span>
+              <span className={time}> 8 am - 1 pm </span>
+            </div>
+            <div>
+              <span className={day}>Sun</span>
+              <span className={time}>Closed</span>
+            </div>
           </p>
           <p>+1 (213) 387 - 3388</p>
           <button>Call Us Now!</button>
         </div>
       </div>
+
       <div className={content}>
         <div className={about}>
-          <p>
-            Serving Los Angeles pet owners since 1988, Beverly Virgil Animal
-            Hospital is a specialized veterinary hospital on West 1st Street LA.
-            Our elite panel of veterinarians and veterinary assistants is
-            available for emergencies, grooming appointments and walk-in visits
-            during regular business hours. Call us and experience exceptional
-            animal care today!
-          </p>
+          <div className={background}>
+            <img src="https://i.imgur.com/KxROnnU.jpeg" />
+          </div>
           <div className={flex}>
             <h3>
               <small>Beverly Virgil Animal Hospital is a </small> full-service
               <span>veterinary practice</span>
             </h3>
-
-            <img
-              src="https://i.imgur.com/L9bG904.jpeg"
-              alt="Beverly Virgil"
-              style={{ marginBottom: `1.45rem` }}
-            />
           </div>
-          <h2>We love our patients!</h2>
-        </div>
-        <div>
+          <div>
+            <h4>
+              Serving Los Angeles pet owners since 1988, Beverly Virgil Animal
+              Hospital is a specialized veterinary hospital on West 1st Street
+              LA. Our elite panel of veterinarians and veterinary assistants is
+              available for emergencies, grooming appointments and walk-in
+              visits during regular business hours. Call us and experience
+              exceptional animal care today!
+            </h4>
+          </div>
           <div className={gallery}>
             {/* <h1>Nested Location</h1> */}
-            <div className={big}>
+            {/* <div className={big}>
+              <h3>
+                <small>Beverly Virgil Animal Hospital is a </small> full-service
+                <span>veterinary practice</span>
+              </h3>
+            </div> */}
+            {/* <div className={big}>
               <img src="https://i.imgur.com/OIeLAIF.jpeg" alt="" />
+            </div> */}
+            <div className={big}>
+              <img
+                src="https://i.imgur.com/L9bG904.jpeg"
+                alt="Beverly Virgil"
+                style={{ marginBottom: `1.45rem` }}
+              />
             </div>
             <div className={vertical}>
               <img src="https://i.imgur.com/tCJou6L.jpeg" alt="" />
             </div>
-
             <img src="https://i.imgur.com/6GacRV8.jpeg" alt="" />
             <img src="https://i.imgur.com/DjPpdnT.jpeg" alt="" />
             <div className={horizontal}>
@@ -118,7 +137,7 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <section class="container container--testimonials">
+        {/* <section class="container container--testimonials">
           <div class="testimonial">
             <p class="testimonial__text mb-25">
               At first, it may be intimidating to see all of the available
@@ -181,7 +200,7 @@ const IndexPage = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </Layout>
   )

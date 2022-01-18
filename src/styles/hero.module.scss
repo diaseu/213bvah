@@ -5,6 +5,12 @@
     overflow: hidden;
     width: 100%;
     height: 90vh;
+    @include breakpoint(phablet) {
+        height: 60vh;
+    }
+    @include breakpoint(mobileonly) {
+        height: 60vh;
+    }
     .frame {
         position: relative;
         width: 100%;
@@ -15,23 +21,42 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include breakpoint(mobileonly) {
+            padding: 0;
+        }
         .content {
             position: absolute;
-            top: 370px;
+            top: 20vh;
             z-index: 10;
             width: 60%;
             margin: 0 auto;
+            @include breakpoint(desktop) {
+                top: 40vh;
+            }
+            @include breakpoint(phablet) {
+                top: 20vh;
+            }
 
             .title {
                 overflow: hidden;
                 h1 {
                     font-family: $sansfont;
-                    font-size: 4.35em;
-                    line-height: 80px;
                     color: $primaryColor;
                     text-transform: uppercase;
                     text-align: center;
                     text-shadow: rgba(0, 0, 0, 0.6) 0px 30px 90px;
+                    @include breakpoint(desktop) {
+                        font-size: 4.35em;
+                        line-height: 80px;
+                    }
+                    @include breakpoint(phablet) {
+                        font-size: 3.35em;
+                        line-height: 1.5em;
+                    }
+                    @include breakpoint(mobileonly) {
+                        font-size: 2.35em;
+                        line-height: 1.5em;
+                    }
                     small {
                         font-size: 0.32em;
                         font-weight: 400;
@@ -59,7 +84,7 @@
                             margin-left: 15px;
                         }
                     }
-                }    
+                }
             }
         }
     }
