@@ -13,19 +13,19 @@ Web redesign for Los Angeles-based Beverly Virgil Animal Hospital. Made for a mo
 ## Screenshot of Application
 
 Home Page
-[<img src="https://i.imgur.com/74pGZY8.jpeg" alt="Screenshot of home page"](https://www.213bvah.com)
+[<img src="https://i.imgur.com/74pGZY8.jpeg" alt="Screenshot of home page" />](https://www.213bvah.com)
 
 About Page
-[<img src="https://i.imgur.com/Stlt8kO.jpeg" alt="Screenshot of about page"](https://www.213bvah.com/about)
+[<img src="https://i.imgur.com/Stlt8kO.jpeg" alt="Screenshot of about page" />](https://www.213bvah.com/about)
 
 Services Page
-[<img src="https://i.imgur.com/Jmt3a5t.png" alt="Screenshot of services page"](https://www.213bvah.com/services)
+[<img src="https://i.imgur.com/Jmt3a5t.png" alt="Screenshot of services page" />](https://www.213bvah.com/services)
 
 Contact Page
-[<img src="https://i.imgur.com/YkJLe6e.jpeg" alt="Screenshot of contact page"](https://www.213bvah.com/contact)
+[<img src="https://i.imgur.com/YkJLe6e.jpeg" alt="Screenshot of contact page" />](https://www.213bvah.com/contact)
 
 Mobile View
-[<img src="https://i.imgur.com/1J7UYDx.png" alt="Screenshot of mobile view"](https://www.213bvah.com/)
+[<img src="https://i.imgur.com/1J7UYDx.png" alt="Screenshot of mobile view" />](https://www.213bvah.com/)
 
 ## 🚀 Technology Used
 
