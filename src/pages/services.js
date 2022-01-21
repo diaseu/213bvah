@@ -35,7 +35,9 @@ const About = () => {
             Beverly Virgil is a full-service veterinary practice, ready to
             search all your pet's needs. Most of our services can be provided in
             a walk-in basis during doctor's hours, but a few of our services do
-            require appointments as noted below. Our services include:
+            require appointments as noted below. For <b>new clients</b>, please
+            feel free to <a href="">download our new patient intake form</a> to
+            fill out ahead of time. Our services include:
           </p>
 
           <div className={services}>
@@ -46,7 +48,7 @@ const About = () => {
                   className={icon}
                   size="4x"
                 />
-                <h4>General Care</h4>
+                <h4>Wellness Care</h4>
                 <p>
                   Wellness exams are an essential part of ensuring your pet's
                   health. We provide comprehensive exams as part of annual

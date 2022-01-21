@@ -96,27 +96,27 @@ const About = () => {
                 <div className={infoday}>
                   <p>Monday</p>
                   <p>8:00 am - 12:00 pm</p>
-                  <p>2:00 am - 6:00 pm</p>
+                  <p>2:30 pm - 6:00 pm</p>
                 </div>
                 <div className={infoday}>
                   <p>Tuesday</p>
                   <p>8:00 am - 12:00 pm</p>
-                  <p>2:00 am - 6:00 pm</p>
+                  <p>2:30 pm - 6:00 pm</p>
                 </div>
                 <div className={infoday}>
                   <p>Wednesday</p>
                   <p>8:00 am - 12:00 pm</p>
-                  <p>2:00 am - 6:00 pm</p>
+                  <p>2:30 pm - 6:00 pm</p>
                 </div>
                 <div className={infoday}>
                   <p>Thursday</p>
                   <p>8:00 am - 12:00 pm</p>
-                  <p>2:00 am - 6:00 pm</p>
+                  <p>2:30 pm - 6:00 pm</p>
                 </div>
                 <div className={infoday}>
                   <p>Friday</p>
                   <p>8:00 am - 12:00 pm</p>
-                  <p>2:00 am - 6:00 pm</p>
+                  <p>2:30 pm - 6:00 pm</p>
                 </div>
                 <div className={infoday}>
                   <p>Saturday</p>
