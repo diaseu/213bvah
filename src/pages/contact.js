@@ -13,7 +13,7 @@ import {
   faCapsules,
   faPhoneAlt
 } from "@fortawesome/free-solid-svg-icons"
-import { start, map, contact, location, info, hours, details, day, time, flexcolumn, flexrow, phone, infohour, infoday } from "../styles/contact.module.scss"
+import { start, map, contact, location, info, hours, details, day, time, flexcolumn, flexrow, phone, infohour, infoday, call } from "../styles/contact.module.scss"
 // import * from '../styles/contact.module.scss'
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -54,7 +54,9 @@ const About = () => {
                     <i>(213) 387 - 9619</i>
                   </p>
                 </div>
-                <button>Call Us Now!</button>
+                <a href="tel:2133873388" className={call}>
+                  <button>Call Us Now!</button>
+                </a>
               </div>
               {/* Column 2 */}
               <div className={flexcolumn}>

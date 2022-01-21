@@ -2,7 +2,13 @@ import * as React from "react"
 // import { Parallax, ParallaxLayer } from "@react-spring/parallax"
 import { Link } from "gatsby"
 
-import { alert, closebtn, hero, about, flex, location, content, contact, map, info, day, time, gallery, big, vertical, horizontal, testimonial, container, background } from "../styles/home.module.scss"
+import { alert, closebtn, hero, covid, about, flex, location, content, contact, map, info, day, time, gallery, big, vertical, horizontal, testimonial, container, background } from "../styles/home.module.scss"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faAddressBook,
+  faMapMarkerAlt,
+  faPhoneAlt,
+} from "@fortawesome/free-solid-svg-icons"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -28,26 +34,35 @@ const IndexPage = () => {
             Animal Hospital
           </h3>
           <p>
-            3363 West First Street
-            <br />
-            Los Angeles, CA 90004
+            <FontAwesomeIcon icon={faMapMarkerAlt} size="1x" />
+            <i>
+              3363 West First Street
+              <br />
+              Los Angeles, CA 90004
+            </i>
           </p>
           <p>
-            <div>
-              <span className={day}>Mon - Fri</span>
-              <span className={time}> 8 am - 12 pm </span>
-            </div>
-            <div>
-              <span className={day}>Sat</span>
-              <span className={time}> 8 am - 1 pm </span>
-            </div>
-            <div>
-              <span className={day}>Sun</span>
-              <span className={time}>Closed</span>
-            </div>
+            <FontAwesomeIcon icon={faPhoneAlt} size="1x" />
+            <i>(213) 387 - 3388</i>
           </p>
-          <p>+1 (213) 387 - 3388</p>
-          <button>Call Us Now!</button>
+
+          <div>
+            <span className={day}>Mon - Fri</span>
+            <span className={time}> 8 am - 12 pm </span>
+          </div>
+          <div>
+            <span className={day}>Sat</span>
+            <span className={time}> 8 am - 1 pm </span>
+          </div>
+          <div>
+            <span className={day}>Sun</span>
+            <span className={time}>Closed</span>
+          </div>
+
+          <p></p>
+          <a href="tel:2133873388">
+            <button>Call Us Now!</button>
+          </a>
         </div>
       </div>
 
@@ -56,6 +71,16 @@ const IndexPage = () => {
           <div className={background}>
             <img src="https://i.imgur.com/KxROnnU.jpeg" />
           </div>
+          <a href="">
+            <div className={covid}>
+              <span>
+                We appreciate your patience while COVID affects our hours of operations.
+                We are still <b>OPEN</b> to make sure your family members get the
+                care they need.
+              </span>
+              <small>Click here to see more details.</small>
+            </div>
+          </a>
           <div className={flex}>
             <h3>
               <small>Beverly Virgil Animal Hospital is a </small> full-service

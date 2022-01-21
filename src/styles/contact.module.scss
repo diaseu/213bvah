@@ -38,6 +38,9 @@
             margin-bottom: 1vh;
         }
     }
+    a.call {
+        text-align: center;
+    }
 }
 
 .contact {
@@ -122,9 +125,9 @@
             .phone {
                 margin: 0 auto;
                 p {
+                    font-family: $sansfont2;
                     font-size: 0.75em;
                     padding-left: 10px;
-                    // padding-bottom: 5px;
                     i {
                         font-style: initial;
                         margin-left: 20px;
