@@ -12,19 +12,30 @@ Web redesign for Los Angeles-based Beverly Virgil Animal Hospital. Made for a mo
 
 ## Screenshot of Application
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
+Home Page
 [<img src="https://i.imgur.com/74pGZY8.jpeg" alt="Screenshot of home page"](https://www.213bvah.com)
+
+About Page
+[<img src="https://i.imgur.com/Stlt8kO.jpeg" alt="Screenshot of about page"](https://www.213bvah.com/about)
+
+Services Page
+[<img src="https://i.imgur.com/Jmt3a5t.png" alt="Screenshot of services page"](https://www.213bvah.com/services)
+
+Contact Page
+[<img src="https://i.imgur.com/YkJLe6e.jpeg" alt="Screenshot of contact page"](https://www.213bvah.com/contact)
+
+Mobile View
+[<img src="https://i.imgur.com/1J7UYDx.png" alt="Screenshot of mobile view"](https://www.213bvah.com/)
 
 ## 🚀 Technology Used
 
 1.  **`React`**
 
-2.  **`Gatsby`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+2.  **`Gatsby`**
 
-3.  **`SASS`**: This application is deployed on Netlify
+3.  **`SASS`**
 
-4.  **`Font Awesome`**: Font Awesome icons
+4.  **`Font Awesome`**
 
 ## 🎓 Highlights
 
