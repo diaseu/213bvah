@@ -86,7 +86,7 @@ const Footer = ({ siteTitle }) => (
           </div>
           <div className={footerday}>
             <p>Saturday</p>
-            <p>8:00 am - 1:00 pm</p>
+            <p>9:00 am - 4:00 pm</p>
           </div>
           <div className={footerday}>
             <p>Sunday</p>
